@@ -1,0 +1,59 @@
+(dialog: bind $PT2,&quot;You are stoked for a granny's day out; What is your go-to outfit of the day?&quot;,&quot;A dark cashmere shawl and warm sweater.;,&quot;bright colors and eye-catching accessories!&quot;,&quot;Anything expensive. My personal assistant can figure it out.;,&quot;,&quotCalm colors,light,casual sweaters, and running shoes;d&quot;)
+
+(if:$PT3 is &quot;A dark cashmere shawl and warm sweater.;)[(set:$PTA to it + 1)]
+(if:$PT3 is &quot;bright colors and eye-catching accessories!;)[(set:$PTB to it + 1)]
+(if:$PT3 is &quot;Anything expensive. My personal assistant can figure it out.;)[(set:$PTC to it +1)]
+(if:$PT3 is &quot;Calm colors, light,casual sweaters, and running shoes;)[(set:$PTD to it +1)]
+
+&lt;!--PTA = mara, PTB = rhonda, PTC = sharon, PTD = aileen--&gt;
+
+&lt;!--
+When copying and pasting literally ALL of this, all you need to change is...
+&quot;Intro(PT#)&quot; to the correct # passage...
+&quot;variable PT#&quot; to the correct #...
+replace the question and answers for the ones you come up with...
+and make sure the responses correctly align with the correct &quot;variable PT letter&quot; 
+--&gt;</tw-passagedata><tw-passagedata pid="29" name="Intro(PT4)" tags="" position="493,629" size="100,100">[[Intro(PT8)]] </tw-passagedata><tw-passagedata pid="30" name="Intro(PT8)" tags="" position="330.5,781.5" size="100,100">[[Proceed|Intro(PT9)]] 
+
+(replace:?Sidebar)[]
+
+(dialog: bind $PT3,&quot;Who do you trust the most when it comes to your health?&quot;, &quot;Healthcare is for the weak. Only vodka will get you through life. &quot;,&quot;My loving family, especially my husband and daughter&quot;,&quot;My plastic surgeon, esthetician, cardiologist, gastrointestinal specialist, physical therapist, and chiropractor.&quot;,&quot;My primary care physician. She graduated from Harvard and has 6 publications on geriatric wellness;)
+
+(if:$PT8 is &quot;Healthcare is for the weak. Only vodka will get you through life.&quot;)[(set:$PTA to it + 1)]
+(if:$PT8 is &quot;My loving family, especially my husband and daughter&quot;)[(set:$PTB to it + 1)]
+(if:$PT8 is &quot;My plastic surgeon, esthetician, cardiologist, gastrointestinal specialist, physical therapist, and chiropractor.&quot;)[(set:$PTC to it +1)]
+(if:$PT8 is &quot;My primary care physician. She graduated from Harvard and has 6 publications on geriatric wellness &quot;)[(set:$PTD to it +1)]
+
+&lt;!--PTA = mara, PTB = rhonda, PTC = sharon, PTD = aileen--&gt;
+
+&lt;!--
+When copying and pasting literally ALL of this, all you need to change is...
+&quot;Intro(PT#)&quot; to the correct # passage...
+&quot;variable PT#&quot; to the correct #...
+replace the question and answers for the ones you come up with...
+and make sure the responses correctly align with the correct &quot;variable PT letter&quot; 
+--&gt;</tw-passagedata><tw-passagedata pid="31" name="Intro(PT9)" tags="" position="329.5,932.5" size="100,100">[[Proceed|Intro(PT10)]] 
+
+(replace:?Sidebar)[]
+
+(dialog: bind $PT5,&quot;What is your most prized posession?&quot;,&quot;A prize I recieved when I was a girl. &quot;,&quot;A necklace given to me by my mother at my wedding&quot;,&quot;My lamborghini Miura, a gift from my husband.&quot;,&quot;My coupon book. Money doesn't grow on trees.&quot;)
+
+(if:$PT9 is &quot;A prize I recieved when I was a girl. &quot;)[(set:$PTA to it + 1)]
+(if:$PT9 is &quot;A necklace given to me by my mother at my wedding&quot;)[(set:$PTB to it + 1)]
+(if:$PT9 is &quot;My lamborghini Miura, a gift from my husband.&quot;)[(set:$PTC to it +1)]
+(if:$PT9 is &quot;My coupon book. Money doesn't grow on trees.&quot;)[(set:$PTD to it +1)]
+
+&lt;!--PTA = mara, PTB = rhonda, PTC = sharon, PTD = aileen--&gt;
+
+&lt;!--
+When copying and pasting literally ALL of this, all you need to change is...
+&quot;Intro(PT#)&quot; to the correct # passage...
+&quot;variable PT#&quot; to the correct #...
+replace the question and answers for the ones you come up with...
+and make sure the responses correctly align with the correct &quot;variable PT letter&quot; 
+--&gt;</tw-passagedata><tw-passagedata pid="32" name="Intro(PT10)" tags="" position="330.5,1085.5" size="100,100">Which [[granny|Intro(PTcompile)]] am I?
+
+(replace:?Sidebar)[]
+
+&lt;!--PTA = mara, PTB = rhonda, PTC = sharon, PTD = aileen--&gt;
+
